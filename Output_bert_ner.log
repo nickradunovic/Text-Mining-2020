@@ -1,0 +1,40 @@
+Name of the selected graph: ner-dl/blstm_38_768_128_200.pb
+Training started - total epochs: 1 - lr: 0.001 - batch size: 8 - labels: 11 - chars: 64 - training examples: 4008
+
+
+Epoch 1/1 started, lr: 0.001, dataset size: 4008
+
+
+Epoch 1/1 - 94.42s - loss: 2915.244 - batches: 503
+Quality on validation dataset (20.0%), validation examples = 801
+time to finish evaluation: 9.12s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+B-Disease	 7	 10	 24	 0.4117647	 0.22580644	 0.29166666
+B-Drug	 202	 15	 28	 0.9308756	 0.87826085	 0.90380317
+I-ADR	 702	 196	 567	 0.7817372	 0.5531915	 0.6479003
+I-Disease	 3	 3	 12	 0.5	 0.2	 0.2857143
+B-ADR	 615	 218	 220	 0.7382953	 0.73652697	 0.7374101
+I-Finding	 3	 1	 26	 0.75	 0.10344828	 0.18181819
+I-Symptom	 0	 0	 43	 0.0	 0.0	 0.0
+B-Symptom	 0	 0	 42	 0.0	 0.0	 0.0
+B-Finding	 6	 7	 30	 0.46153846	 0.16666667	 0.24489798
+I-Drug	 1	 0	 19	 1.0	 0.05	 0.095238104
+tp: 1539 fp: 450 fn: 1011 labels: 10
+Macro-average	 prec: 0.5574211, rec: 0.2913901, f1: 0.38271642
+Micro-average	 prec: 0.77375567, rec: 0.6035294, f1: 0.678123
+Quality on test dataset: 
+time to finish evaluation: 9.42s
+label	 tp	 fp	 fn	 prec	 rec	 f1
+B-Disease	 4	 6	 37	 0.4	 0.09756097	 0.15686275
+B-Drug	 261	 31	 29	 0.8938356	 0.9	 0.89690715
+I-ADR	 681	 293	 572	 0.69917864	 0.5434956	 0.6115851
+I-Disease	 3	 1	 22	 0.75	 0.12	 0.20689654
+B-ADR	 674	 237	 242	 0.73984635	 0.73580784	 0.7378216
+I-Finding	 3	 0	 69	 1.0	 0.041666668	 0.080000006
+I-Symptom	 0	 0	 35	 0.0	 0.0	 0.0
+B-Symptom	 0	 0	 52	 0.0	 0.0	 0.0
+B-Finding	 9	 3	 72	 0.75	 0.11111111	 0.1935484
+I-Drug	 2	 0	 44	 1.0	 0.04347826	 0.083333336
+tp: 1637 fp: 571 fn: 1174 labels: 10
+Macro-average	 prec: 0.62328607, rec: 0.25931206, f1: 0.36624956
+Micro-average	 prec: 0.74139494, rec: 0.582355, f1: 0.65232116
